@@ -1,7 +1,7 @@
 import express from 'express'
 import db from '../service/cadastroService.js' // lugar onde tem a query sql q vai coloca os dados do usuario no banco
 
-const router = express.Router() //extanciando o metodo/função router do express para a variavel router 
+const router = express.Router() //instanciando o metodo/função router do express para a variavel router 
 
 router.post('/' , async (request, response) => { // vai executa essa função na rota raiz com o metodo post
     const {nome, email, senha} = request.body // vai pegar esses valores do corpo da requisição
